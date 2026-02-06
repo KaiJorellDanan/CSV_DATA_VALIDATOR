@@ -1,0 +1,62 @@
+======================================================================
+CSV DATA VALIDATOR AND CLEANER - TABLEAU EDITION
+======================================================================
+Generated: 2026-02-04 12:51:36
+
+SUMMARY
+----------------------------------------------------------------------
+Missing Values: 3
+Duplicate Rows: 2
+Columns With Outliers: 1
+Format Errors: 2
+Column Name Issues: 4
+Type Errors: 0
+Total Rows: 12
+Total Columns: 9
+
+COLUMN NAME ISSUES (Tableau Compatibility)
+----------------------------------------------------------------------
+Column 'order id':
+  - contains spaces
+Column 'customer name':
+  - contains spaces
+Column 'customer-email':
+  - contains special characters
+Column 'order date':
+  - contains spaces
+
+MISSING VALUES
+----------------------------------------------------------------------
+Column 'customer name': 1 missing (8.33%)
+Column 'customer-email': 1 missing (8.33%)
+Column 'order_amount': 1 missing (8.33%)
+
+DUPLICATE ROWS
+----------------------------------------------------------------------
+Found 2 duplicate rows
+
+OUTLIERS DETECTED
+----------------------------------------------------------------------
+Column 'order_amount': 1 outliers
+  Values: [999999.99]
+
+FORMAT ERRORS
+----------------------------------------------------------------------
+Column 'customer-email': 1 format errors
+  Row 2: 'invalid_email'
+Column 'order date': 1 format errors
+  Row 2: '2024-13-45'
+
+CLEANING OPERATIONS
+----------------------------------------------------------------------
+✓ Removed 1 duplicate rows
+✓ Filled 1 missing values in 'customer name' with 'Unknown'
+✓ Filled 1 missing values in 'customer-email' with 'Unknown'
+✓ Filled 1 missing values in 'order_amount' with median: 187.62
+✓ Removed 1 outliers from 'order_amount'
+
+TABLEAU PREPARATION
+----------------------------------------------------------------------
+✓ Standardized 9 column names for Tableau
+
+======================================================================
